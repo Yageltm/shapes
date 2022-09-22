@@ -132,7 +132,7 @@ def main():
         content = serialize(content)
     else:
         content = deserialize(content)
-    w_file = open("%s_output.txt" % file_input[:-4], 'w')
+    w_file = open(f'output_{file_input[:-4]}.txt', 'w')
     w_file.write(content)
     w_file.close()
 
